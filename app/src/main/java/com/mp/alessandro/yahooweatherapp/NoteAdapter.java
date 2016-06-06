@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by Alessandro on 22/04/2016.
  */
 public class NoteAdapter extends ArrayAdapter<Note> {
-    //Commit 
+
     public static class ViewHolder{
         TextView title;
         TextView note;
