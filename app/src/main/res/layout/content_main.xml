@@ -1,109 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="false">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/vertical_page_margin"
-            android:paddingLeft="@dimen/horizontal_page_margin"
-            android:paddingRight="@dimen/horizontal_page_margin"
-            android:paddingTop="@dimen/vertical_page_margin">
-
-                <TextView
-                    android:text="yeyeye"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal" />
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:layout_marginBottom="@dimen/margin_medium">
-
-                        <fragment
-                            android:id="@+id/autocomplete_fragment"
-                            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
-
-                </android.support.v7.widget.CardView>
-
-                <TextView
-                    android:text="selectedplace"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/place_details"
-                    android:autoLink="all"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/place_attribution"
-                    android:autoLink="all"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/margin_medium" />
-        </LinearLayout>
-</ScrollView>
-
-<!--
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="5dp"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
-    android:paddingTop="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.mp.alessandro.yahooweatherapp.MainActivity"
+    tools:context="com.example.sara.city.MainActivity"
     tools:showIn="@layout/activity_main">
 
-        <EditText
-            android:id="@+id/autocomplete_tv"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:drawableStart="@mipmap/ic_search_black_18dp"
-            android:drawablePadding="10dp"
-            android:hint="@string/hint_place"
-            android:textColorHint="@color/grey"
-            android:textColor="@color/colorPrimary"
-            android:background="@drawable/write_text"
-            android:singleLine="true"
-            android:textSize="15sp"
-             />
-        
-        <ImageView
-            android:id="@+id/clear_text"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="14dp"
-            android:src="@mipmap/ic_clear_black_18dp"/>
+    <fragment
+        android:id="@+id/mainActivityFra"
+        android:name="com.example.sara.city.MainActivityListFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/recyclerView"
-            android:layout_below="@+id/autocomplete_tv"
-            android:layout_marginTop="10dp"
-            android:scrollbars="vertical"
-            />
 
-</RelativeLayout>-->
+</RelativeLayout>

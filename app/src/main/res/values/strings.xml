@@ -1,34 +1,7 @@
 <resources>
-
-    <!--Weather Activity-->
-    <string name="app_name">YahooWeatherApp</string>
+    <string name="app_name">City</string>
     <string name="action_settings">Settings</string>
-    <string name="condition_icon">Condition Icon</string>
-    <string name="powered_by_yahoo">Powered By Yahoo</string>
-    <string name="temperature">Temperature</string>
-    <string name="condition">Condition</string>
-    <string name="location">Location</string>
-    <string name="title_activity_main">YahooWeatherApp</string>
 
-    <!--Main Activity-->
-    <string name="search_city">Type a city here</string>
-    <string name="confirm_search">Confirm Search</string>
-    <string name="hint_place">Search place here</string>
-
-    <!--GOOGLE API KEY-->
-    <string name="google_api_key">AIzaSyDo99xn8HWrYfHFVatznMuS_f0tjUa26y0</string>
-
-    <string name="place_details">
-    <![CDATA[
-        <b>%1$s</b>
-        <br/>
-        <i>Place Id: %2$s</i>
-        <br/>
-        Address: %3$s
-        <br/>
-        Phone: %4$s
-        <br/>
-        Website: %5$s
-    ]]>
-    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
